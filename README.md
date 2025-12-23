@@ -1,83 +1,119 @@
-🛡️ Steganography & Forensic Analysis Tool (SFAT)
-Cybersecurity & Digital Forensics Utility / Siber Güvenlik ve Adli Bilişim Aracı 
+# 🛡️ SFAT – Steganography & Forensic Analysis Tool
 
-Language: English | Turkish
+*A Cybersecurity & Digital Forensics Utility*
 
-🇬🇧 English 📝 Project Overview
-This tool is a specialized cybersecurity utility designed to demonstrate Information Hiding (Steganography) and Digital Forensic Detection techniques.
+**Language Support:** 🇬🇧 English | 🇹🇷 Turkish
 
-Objective: The primary goal is to simulate how covert channels are established using image carriers and to provide a "Forensic Analyst" dashboard to detect such anomalies. This Python-based tool utilizes the LSB (Least Significant Bit) algorithm for data injection and advanced Image Processing techniques for detection.
+---
 
-Features and Capabilities:
+## 🇬🇧 English
 
-LSB Encoding Engine: Inject secret text payloads into image pixels with zero visual distortion.
+### 📌 Project Overview
 
-Forensic Dashboard: A professional analysis interface using Matplotlib & OpenCV.
+SFAT (Steganography & Forensic Analysis Tool) is a Python-based cybersecurity utility designed to demonstrate **Information Hiding (Steganography)** techniques and their detection from a **Digital Forensics** perspective.
 
-Anomaly Detection: Instantly visualize modified bits using difference mapping and thresholding.
+The tool simulates how covert communication channels can be created using image files and provides a **Forensic Analyst–style analysis environment** to detect and investigate these hidden manipulations.
 
-Payload Extraction: Recover hidden messages from suspicious images.
+---
 
-Quality Metrics: Calculate PSNR (Peak Signal-to-Noise Ratio) to assess image integrity.
+### 🎯 Objective
 
-Multi-Language Support: Fully localized for English and Turkish.
+* Simulate hidden data transmission using image carriers
+* Demonstrate forensic detection of steganographic anomalies
+* Provide hands-on insight into offensive (hiding) and defensive (detection) techniques
 
-UTF-8 Compatibility: Full support for special characters.
+SFAT uses the **LSB (Least Significant Bit)** algorithm for data embedding and advanced **image processing techniques** for forensic analysis.
 
-Technical Stack:
+---
 
-Core: Python 3.x
+### 🚀 Features & Capabilities
 
-Image Processing: OpenCV (cv2), NumPy
+#### 🔐 Steganography (Offensive)
 
-Visualization: Matplotlib
+* **LSB Encoding Engine** – Inject secret UTF-8 text payloads into image pixels with *no visible distortion*
+* **Payload Extraction** – Recover hidden messages from suspicious images
 
-Future Enhancements (Development Plans):
+#### 🧪 Digital Forensics (Defensive)
 
-Encryption Layer: AES-256 encryption for payloads before hiding.
+* **Forensic Analysis Dashboard** – Professional visualization using Matplotlib & OpenCV
+* **Anomaly Detection** – Detect modified pixels via difference mapping and thresholding
+* **Quality Metrics** – PSNR (Peak Signal-to-Noise Ratio) calculation to measure image integrity
 
-Web Interface: Migration to a Flask/Django-based UI.
+#### 🌍 General
 
-Batch Analysis: Automated scanning for multiple images.
+* **Multi-language Support** – Fully localized English & Turkish interface
+* **UTF-8 Compatibility** – Supports special characters seamlessly
 
-AI Detection: Machine Learning models to detect steganography without original reference.
+---
 
+### 🛠️ Technical Stack
 
-🇹🇷 Turkish 📝 Proje Özeti
-Bu araç, Bilgi Gizleme (Steganografi) ve Adli Bilişim Tespiti (Digital Forensics) tekniklerini uygulamalı olarak göstermek amacıyla geliştirilmiş bir siber güvenlik yazılımıdır.
+* **Core Language:** Python 3.x
+* **Image Processing:** OpenCV (cv2), NumPy
+* **Visualization:** Matplotlib
 
-Amaç: Temel amaç, görüntü dosyaları üzerinde gizli iletişim kanallarının nasıl oluşturulduğunu simüle etmek ve bir "Adli Bilişim Analisti" gözüyle bu anormalliklerin nasıl tespit edileceğini sağlayan bir analiz ortamı sunmaktır. Python tabanlı bu araç, veri enjeksiyonu için LSB (En Anlamsız Bit) algoritmasını ve tespit için ileri seviye Görüntü İşleme tekniklerini kullanır.
+---
 
-Özellikler ve Yetenekler:
+### 🔮 Future Enhancements
 
-LSB Kodlama Motoru: Görüntüde görsel bozulma yaratmadan piksellere gizli metin enjekte eder.
+* **Encryption Layer** – AES-256 encryption before payload embedding
+* **Web Interface** – Flask or Django-based web UI
+* **Batch Analysis** – Automated scanning of multiple images
+* **AI-Based Detection** – Machine learning models to detect steganography without original reference images
 
-Adli Analiz Paneli: Matplotlib ve OpenCV tabanlı profesyonel analiz arayüzü.
+---
 
-Anormallik Tespiti: Fark haritalama ve eşikleme yöntemleriyle değiştirilmiş bitleri anında görselleştirir.
+## 🇹🇷 Türkçe
 
-Veri Çıkarımı: Şüpheli görüntülerden gizli mesajları geri kurtarır.
+### 📌 Proje Özeti
 
-Kalite Metrikleri: Görüntü bütünlüğünü ölçmek için PSNR hesaplaması yapar.
+SFAT (Steganography & Forensic Analysis Tool), **Bilgi Gizleme (Steganografi)** tekniklerini ve bunların **Adli Bilişim** bakış açısıyla nasıl tespit edilebileceğini göstermek amacıyla geliştirilmiş Python tabanlı bir siber güvenlik aracıdır.
 
-Çoklu Dil Desteği: Türkçe ve İngilizce tam uyumlu arayüz.
+Bu araç, görüntü dosyaları üzerinden gizli iletişim kanallarının nasıl oluşturulduğunu simüle eder ve bir **Adli Bilişim Analisti** gibi analiz yapmayı mümkün kılar.
 
-UTF-8 Uyumluluğu: Türkçe karakterleri sorunsuz işler.
+---
 
-Teknik Altyapı:
+### 🎯 Amaç
 
-Çekirdek: Python 3.x
+* Görüntüler üzerinden gizli veri iletimini simüle etmek
+* Steganografik anormalliklerin adli yöntemlerle tespitini göstermek
+* Saldırgan (gizleme) ve savunmacı (tespit) teknikleri birlikte öğretmek
 
-Görüntü İşleme: OpenCV (cv2), NumPy
+SFAT, veri enjeksiyonu için **LSB (En Anlamsız Bit)** algoritmasını ve analiz için ileri seviye **görüntü işleme** tekniklerini kullanır.
 
-Görselleştirme: Matplotlib
+---
 
-Geliştirme Planları (Future Enhancements):
+### 🚀 Özellikler ve Yetenekler
 
-Şifreleme Katmanı: Veriyi gizlemeden önce AES-256 ile şifreleme.
+#### 🔐 Steganografi (Saldırgan Perspektifi)
 
-Web Arayüzü: Flask/Django tabanlı web arayüzüne geçiş.
+* **LSB Kodlama Motoru** – Görsel bozulma olmadan piksellere gizli UTF-8 metin enjekte eder
+* **Veri Çıkarımı** – Şüpheli görüntülerden gizli mesajları geri kurtarır
 
-Toplu Analiz: Birden fazla görseli otomatik tarama.
+#### 🧪 Adli Bilişim (Savunmacı Perspektif)
 
-Yapay Zeka Tespiti: Orijinal referans olmadan steganografiyi tespit eden ML modelleri.
+* **Adli Analiz Paneli** – Matplotlib ve OpenCV ile geliştirilmiş profesyonel analiz arayüzü
+* **Anormallik Tespiti** – Fark haritalama ve eşikleme ile değiştirilmiş pikselleri görselleştirir
+* **Kalite Metrikleri** – Görüntü bütünlüğü için PSNR hesaplaması
+
+#### 🌍 Genel
+
+* **Çoklu Dil Desteği** – Türkçe ve İngilizce tam uyum
+* **UTF-8 Uyumluluğu** – Türkçe karakter desteği
+
+---
+
+### 🛠️ Teknik Altyapı
+
+* **Programlama Dili:** Python 3.x
+* **Görüntü İşleme:** OpenCV (cv2), NumPy
+* **Görselleştirme:** Matplotlib
+
+---
+
+### 🔮 Geliştirme Planları
+
+* **Şifreleme Katmanı** – Gizleme öncesi AES-256 şifreleme
+* **Web Arayüzü** – Flask / Django tabanlı arayüz
+* **Toplu Analiz** – Birden fazla görselin otomatik taranması
+* **Yapay Zeka Tespiti** – Referans görüntü olmadan steganografi tespiti yapan ML modelleri
