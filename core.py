@@ -5,10 +5,7 @@ import cv2
 import numpy as np
 
 def veri_binary_cevir(veri):
-    """
-    Veriyi bilgisayarın dili olan 0 ve 1'lere (Binary) çevirir.
-    Hoca Sorarsa: "Steganografi bit seviyesinde yapıldığı için veriyi önce binary formata dönüştürmem şart."
-    """
+
     if isinstance(veri, str):
         return ''.join([format(b, "08b") for b in veri.encode('utf-8')])
     elif isinstance(veri, bytes) or isinstance(veri, np.ndarray):
